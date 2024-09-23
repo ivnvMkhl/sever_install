@@ -29,6 +29,7 @@ echo -e "${GREEN}---------- clojure vesion $(clojure --version) installed${NC}"
 echo -e "${ORANGE}---------- install nvm${NC}"
 curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh" | bash
 source ~/.nvm/nvm.sh
+rm -f ./linux-install.sh
 echo -e "${GREEN}---------- nvm version $(nvm -v) installed${NC}"
 
 # INSTALL NODE
@@ -40,6 +41,9 @@ echo -e "${GREEN}---------- node version $(node -v) installed${NC}"
 echo -e "${ORANGE}---------- install yarn${NC}"
 npm install -g yarn
 echo -e "${GREEN}---------- yarn version $(yarn -v) installed${NC}"
+
+# DELETE FILE
+rm -f ./metabase_ubuntu_prepare.sh
 
 # RELOAD SHELL
 exec "$SHELL"
