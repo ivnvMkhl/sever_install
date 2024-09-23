@@ -15,7 +15,7 @@ apt-get update
 
 # INSTALL JAVA
 echo -e "${ORANGE}---------- install java${NC}"
-sudo apt-get install "openjdk-$JAVA_VERSION-jdk"
+sudo apt-get --yes install "openjdk-$JAVA_VERSION-jdk"
 echo -e "${GREEN}---------- java version $(java --version) installed${NC}"
 
 # INSTALL CLOJURE
