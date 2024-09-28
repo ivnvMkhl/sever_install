@@ -20,7 +20,7 @@ sudo apt-get update
 
 sudo apt-get --yes install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-echo -e "${GREEN}---------- java version $(docker -v) installed${NC}"
+echo -e "${GREEN}---------- $(docker -v) installed${NC}"
 
 # DELETE FILE
 rm -f ./docker_install.sh
