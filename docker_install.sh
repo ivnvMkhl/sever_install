@@ -1,3 +1,10 @@
+# COLORS
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+NC='\033[0m'
+
+# PREPARE
 sudo apt-get update
 sudo apt-get --yes install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -13,7 +20,7 @@ sudo apt-get update
 
 sudo apt-get --yes install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-docker -v
+echo -e "${GREEN}---------- java version $(docker -v) installed${NC}"
 
 # DELETE FILE
 rm -f ./docker_install.sh
