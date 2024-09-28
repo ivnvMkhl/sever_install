@@ -12,3 +12,8 @@ echo \
 sudo apt-get update
 
 sudo apt-get --yes install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+docker -v
+
+# DELETE FILE
+rm -f ./docker_install.sh
