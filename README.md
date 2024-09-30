@@ -14,3 +14,11 @@ curl -L -O "https://raw.githubusercontent.com/ivnvMkhl/sever_install/refs/heads/
 chmod +x ./docker_install.sh
 ./docker_install.sh
 ```
+
+### add node_exporter autostart service
+
+```bash
+curl -L -O "https://raw.githubusercontent.com/ivnvMkhl/sever_install/refs/heads/main/add_node_exporter_service.sh"
+chmod +x ./add_node_exporter_service.sh
+./add_node_exporter_service.sh
+```
